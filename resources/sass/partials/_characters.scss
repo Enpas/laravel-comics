@@ -1,0 +1,42 @@
+main.characters {
+  padding: 0 15%;
+  background-color: $dark;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      flex-basis: calc(100% / 6);
+      margin-bottom: 40px;
+      .img-box {
+        height: 190px;
+        overflow-y: hidden;
+        margin-bottom: 20px;
+      }
+      h3 {
+        max-width: 190px;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFF;
+      }
+    }
+  }
+  h2 {
+    @include mainText();
+    font-size: 18px;
+    position: absolute;
+    left: 15%;
+    top: -20px
+  }
+  a {
+    @include mainText();
+    font-size: 14px;
+  }
+}

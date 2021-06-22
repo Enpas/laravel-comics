@@ -1,0 +1,78 @@
+.banner {
+  height: 80px;
+  width: 100%;
+  background-color: $light-blue;
+  position: relative;
+  img {
+    width: 150px;
+    border: 1px solid #FFF;
+    position: absolute;
+    left: 20%;
+    top: -170px;
+  }
+}
+
+main.comic {
+  padding: 0 20%;
+  .comic-desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    h2 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .price-availability {
+      display: flex;
+      justify-content: space-between;
+      background-color: #53BA59;
+      color: #FFF;
+      border: 1px solid #00F;
+      margin-bottom: 15px;
+      .price {
+        width: 62%;
+        height: 100%;
+        padding-right: 10px;
+        border-right: 1px solid #00F;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+      }
+      .availability {
+        padding: 15px 20px;
+      }
+    }
+    p {
+      font-size: 13px;
+      line-height: 150%;
+      opacity: .7;
+    }
+    .adv {
+      margin-left: 20px;
+      p {
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 600;
+      }
+      img {
+        width: 250px;
+      }
+    }
+  }
+  .comic-info {
+    .tables-container {
+      display: flex;
+      justify-content: space-between;
+      .table {
+        h3{
+          margin-bottom: 15px;
+        }
+        width: 45%;
+        .row {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@mixin mainText() {
+  color: #FFF;
+  background-color: $light-blue;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

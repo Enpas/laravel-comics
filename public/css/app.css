@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 1170px;
+  padding: 0 15%;
+}
+
+.header {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+}
+.header img {
+  height: 70px;
+}
+.header ul {
+  display: flex;
+  height: 100%;
+}
+.header ul li {
+  margin: 0 10px;
+}
+.header ul li.active {
+  color: #0082F9;
+  border-bottom: 4px solid #0082F9;
+}
+.header ul a {
+  display: inline-block;
+  color: #1C1C1C;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 100px;
+}
+
+section.jumbo {
+  height: 300px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
+main.characters {
+  padding: 0 15%;
+  background-color: #1C1C1C;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.characters .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main.characters .card-container .card {
+  flex-basis: calc(100% / 6);
+  margin-bottom: 40px;
+}
+main.characters .card-container .card .img-box {
+  height: 190px;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+main.characters .card-container .card h3 {
+  max-width: 190px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFF;
+}
+main.characters h2 {
+  color: #FFF;
+  background-color: #0082F9;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  left: 15%;
+  top: -20px;
+}
+main.characters a {
+  color: #FFF;
+  background-color: #0082F9;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.banner {
+  height: 80px;
+  width: 100%;
+  background-color: #0082F9;
+  position: relative;
+}
+.banner img {
+  width: 150px;
+  border: 1px solid #FFF;
+  position: absolute;
+  left: 20%;
+  top: -170px;
+}
+
+main.comic {
+  padding: 0 20%;
+}
+main.comic .comic-desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+main.comic .comic-desc h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+main.comic .comic-desc .price-availability {
+  display: flex;
+  justify-content: space-between;
+  background-color: #53BA59;
+  color: #FFF;
+  border: 1px solid #00F;
+  margin-bottom: 15px;
+}
+main.comic .comic-desc .price-availability .price {
+  width: 62%;
+  height: 100%;
+  padding-right: 10px;
+  border-right: 1px solid #00F;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+main.comic .comic-desc .price-availability .availability {
+  padding: 15px 20px;
+}
+main.comic .comic-desc p {
+  font-size: 13px;
+  line-height: 150%;
+  opacity: 0.7;
+}
+main.comic .comic-desc .adv {
+  margin-left: 20px;
+}
+main.comic .comic-desc .adv p {
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 600;
+}
+main.comic .comic-desc .adv img {
+  width: 250px;
+}
+main.comic .comic-info .tables-container {
+  display: flex;
+  justify-content: space-between;
+}
+main.comic .comic-info .tables-container .table {
+  width: 45%;
+}
+main.comic .comic-info .tables-container .table h3 {
+  margin-bottom: 15px;
+}
+main.comic .comic-info .tables-container .table .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.products {
+  background-color: #0082F9;
+  padding: 50px 15%;
+}
+section.products ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+section.products ul li {
+  margin-right: 10px;
+}
+section.products ul li:last-child {
+  margin-right: 0;
+}
+section.products ul li a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 12px;
+}
+section.products ul img {
+  height: 50px;
+  max-width: 50px;
+  margin-right: 15px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+footer .top img {
+  height: 400px;
+  transform: scale(1.5);
+}
+footer .top .nav-columns {
+  display: flex;
+}
+footer .top .nav-columns .col {
+  margin-right: 30px;
+}
+footer .top .nav-columns .col .dc-comics-nav {
+  margin-bottom: 20px;
+}
+footer .top .nav-columns h3 {
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer .top .nav-columns li {
+  padding: 3px 0;
+}
+footer .top .nav-columns a {
+  color: #959595;
+  font-size: 12px;
+}
+footer .top .nav-columns a:hover {
+  color: #FFF;
+}
+
+.bottom {
+  height: 100px;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom a {
+  text-transform: uppercase;
+}
+.bottom #sign-up {
+  color: #FFF;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #0082F9;
+  font-weight: 600;
+}
+.bottom #sign-up:hover {
+  transform: scale(1.1);
+}
+.bottom ul {
+  display: flex;
+  align-items: center;
+}
+.bottom ul li {
+  margin-left: 20px;
+}
+.bottom ul li a {
+  font-weight: 800;
+  color: #0082F9;
+}
+.bottom ul li img {
+  height: 30px;
+}

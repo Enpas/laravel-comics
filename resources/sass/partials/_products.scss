@@ -1,0 +1,27 @@
+section.products {
+  background-color: $light-blue;
+  padding: 50px 15%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    li {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 12px;
+    }
+    } 
+    img {
+      height: 50px;
+      max-width: 50px;
+      margin-right: 15px;
+    }
+  }
+}
